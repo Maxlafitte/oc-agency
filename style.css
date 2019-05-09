@@ -1,0 +1,1703 @@
+/*------------------------------------GENERAL--------------------------------*/
+/*------------------------------------GENERAL--------------------------------*/
+/*------------------------------------GENERAL--------------------------------*/
+
+
+@font-face
+{
+    font-family: 'robotomedium';
+    src: url('robotomedium/Roboto-Medium-webfont.eot');
+    src: url('robotomedium/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('robotomedium/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('robotomedium/Roboto-Medium-webfont.woff') format('woff'),
+         url('robotomedium/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('robotomedium/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+  font-family: 'robotomedium';
+}
+
+h5 ~ p,
+h2 ~ p,
+h3 ~ p
+{
+  color: rgb(125,128,131);
+  font-size: 0.9em;
+}
+
+h2
+{
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/*------------------------------------HEADER-------------------------------*/
+/*------------------------------------HEADER-------------------------------*/
+/*------------------------------------HEADER-------------------------------*/
+
+
+/*-- Section Header--*/
+#header
+{
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255,255,255);
+}
+
+/*-- Nav du header --*/
+nav li
+{
+  padding-right: 20px;
+
+}
+nav ul
+{
+  display: flex;
+  list-style-type: none;
+  font-size: 0.9em;
+  color: rgb(125,128,131);
+}
+nav a
+{
+  justify-content: space-around;
+  text-decoration: none;
+  color: rgb(125,128,131);
+}
+nav a:hover
+{
+  border-top: 3px solid rgb(111,172,207);
+  width: 20px;
+  padding-top: 30px;
+}
+
+
+/*-- Logo de Webagency --*/
+.logo
+{
+  margin-left: 10px;
+}
+
+/*--------------------------------SECTION SLIDER------------------------------*/
+/*--------------------------------SECTION SLIDER------------------------------*/
+/*--------------------------------SECTION SLIDER------------------------------*/
+
+/*--Ensemble du Slider__*/
+#container
+{
+  overflow: hidden;
+  position: relative;
+  left:0;
+  right:0;
+  top:0;
+  margin-top: 90px;
+}
+.all_container
+{
+    width: 100%;
+    height: auto;
+}
+.picture_slider
+{
+  float: left;
+  z-index: 80;
+  width: 100%;
+}
+.ps2
+{
+  display: none;
+}
+
+/*-- Animation du Slider--*/
+.timeline
+{
+  position: absolute;
+  background: #999;
+  bottom: -3px;
+  left: 0px;
+  height: 7px;
+  background: rgb(111,172,207);
+  background: rgba(111,172,207, 0.8);
+  width: 100%;
+}
+
+/*-- Chevron du slider --*/
+.fleche_gauche
+{
+  position: absolute;
+  top: 145px;
+  left: 1px;
+  width: 36px;
+    height: 57px;
+    font-size: 0.8em;
+    background-color: rgba(0,0,0, 0.2);
+    border-right: 1px black;
+    border-top: 1px black;
+    border-bottom: 1px black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 90;
+}
+.fa-chevron-left
+{
+  padding-left: 5px;
+}
+.fleche_droite
+{
+  position: absolute;
+  top: 145px;
+  right: 1px;
+  width: 36px;
+  height: 57px;
+  font-size: 0.8em;
+  background-color: rgba(0,0,0, 0.2);
+  border-left: 1px black;
+  border-top: 1px black;
+  border-bottom: 1px black;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  z-index: 90;
+}
+.fa-chevron-right
+{
+  padding-left: 11px;
+}
+
+.fleche_gauche i, .fleche_droite i
+{
+  color: rgb(255,255,255);
+  font-size: 2em;
+  padding-top: 15px;
+}
+
+/*-- Texte du Slider --*/
+.slide_pres
+{
+  z-index: 90;
+  height: 300px;
+  width: 550px;
+  position: absolute;
+  padding-left: 135px;
+  padding-top: 65px;
+  text-align: left;
+  color: rgb(255,255,255);
+  font-weight: bold;
+}
+.slide_pres h1
+{
+  font-size: 2em;
+}
+.slide_pres span
+{
+  color: rgb(111,172,207);
+}
+.bouton_info
+{
+  z-index: 90;
+  border: 30px none;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(111,172,207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 4px 0px rgb(87,139,170);
+}
+
+.bouton_info a
+{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/*--------------------------------SECTION NOS SERVICES-------------------------*/
+/*--------------------------------SECTION NOS SERVICES-------------------------*/
+/*--------------------------------SECTION NOS SERVICES-------------------------*/
+
+
+/*-- section id="nos_services"--*/
+#nos_services
+{
+  display:block;
+  width: 100%;
+  margin: 15px 0px;
+  padding: 80px 0px;
+}
+
+/*-- CSS pour les titres sections: services et projets.--*/
+.titre_sections
+{
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 110px;
+}
+.titre_sections p
+{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.separateur
+{
+    display: block;
+    position: relative;
+}
+.rond-bleu
+{
+    position: relative;
+    color: rgb(111,172,207);
+    border-radius: 100%;
+    border: solid 3px white;
+    z-index: 1;
+    font-size: 1.1em;
+}
+hr
+{
+  position: relative;
+  bottom: 20px;
+    width: 110px;
+    background: 1px rgb(229,229,229);
+    z-index: 0;
+}
+h2
+{
+  margin-bottom: 1px;
+}
+
+/*--Regroupe sans le titre la section Nos services --*/
+.section_service
+{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 70px;
+}
+
+/*-- photo d'ordinateur--*/
+.photo_service
+{
+  justify-content: flex-start;
+}
+
+/*-- les 3 minis sections avec les logos--*/
+.liste_services
+{
+  position: relative;
+  justify-content: flex-start;
+  text-align: justify;
+  margin-top: 30px;
+  max-width: 50%;
+}
+
+/*-- les 3 minis sections--*/
+.UX
+{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UI
+{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SEO
+{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-- groupe des 3 icones--*/
+.icon_left
+{
+  position: absolute;
+  right: 418px;
+  display: block;
+  flex-direction: row;
+  align-content: center;
+  padding-right: 30px;
+  color: rgb(111,172,207);
+}
+.icone_service
+{
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  border-radius: 100%;
+    border: solid 5px white;
+    font-size: 0.8em;
+    z-index: 70;
+}
+
+/*-- les 3 logos fontawesome avec bordure--*/
+.fa-chart-line
+{
+  border-radius: 100%;
+  border: solid 1px rgb(229,229,229);
+  padding: 18px 18px 18px 18px;
+  font-size: 1.7em;
+}
+.fa-cubes
+{
+  border-radius: 100%;
+  border: solid 1px rgb(229,229,229);
+  padding: 18px 18px 18px 18px;
+  font-size: 1.7em;
+}
+.fa-chart-pie
+{
+  border-radius: 100%;
+  border: solid 1px rgb(229,229,229);
+  padding: 18px 18px 18px 18px;
+  font-size: 1.7em;
+}
+
+
+
+/*-------------------------------SECTION NOS PROJETS------------------------------*/
+/*-------------------------------SECTION NOS PROJETS------------------------------*/
+/*-------------------------------SECTION NOS PROJETS------------------------------*/
+
+
+/*-- section id="nos_projets"--*/
+#nos_projets
+{
+  background-color: rgb(244, 245, 245);
+  width: 100%;
+  height: 950px;
+  padding-top: 90px;
+}
+.separation
+{
+  width: 80px;
+  display: flex;
+  align-content: center;
+}
+
+/*-- regroupe navigation label et les figures--*/
+.projects
+{
+  position: relative;
+  margin-top: 60px;
+}
+/*-- regroupe les labels et input--*/
+ .label_nav
+{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.projects label
+{
+    background-color: rgb(229,229,229);
+    border-width: 0px;
+    padding: 9px 15px 9px 15px;
+    white-space: nowrap;
+    float: left;
+    display: block;
+    margin: 0 -10px;
+    color: black;
+}
+.label_type_all
+{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.label_type_3
+{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.label_type_1 + .fa-caret-down,
+.label_type_3 + .fa-caret-down
+{
+  position: relative;
+  bottom: -29px;
+  left: -44px;
+  color: rgb(87,139,170);
+  visibility: hidden;
+  font-size: 1.8em;
+}
+.label_type_all + .fa-caret-down,
+.label_type_2 + .fa-caret-down
+{
+  position: relative;
+  bottom: -29px;
+  left: -47px;
+  color: rgb(87,139,170);
+  visibility: hidden;
+  font-size: 1.8em;
+}
+.projects input
+{
+  display: none;
+}
+
+/*-- :hover et :after et checked sur label--*/
+.projects label:hover
+{
+  color: white;
+}
+.projects input.select_all:checked ~ .label_nav label.label_type_all + .fa-caret-down,
+.projects input.select_1:checked ~ .label_nav label.label_type_1 + .fa-caret-down,
+.projects input.select_2:checked ~ .label_nav label.label_type_2 + .fa-caret-down,
+.projects input.select_3:checked ~ .label_nav label.label_type_3 + .fa-caret-down
+{
+  visibility: visible;
+}
+
+.projects input.select_all:checked ~ .label_nav label.label_type_all,
+.projects input.select_1:checked ~ .label_nav label.label_type_1,
+.projects input.select_2:checked ~ .label_nav label.label_type_2,
+.projects input.select_3:checked ~ .label_nav label.label_type_3
+{
+  background-color: rgb(111,172,207);
+  border-bottom: 3px solid rgb(87,139,170);
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+}
+
+/*-- Figure de la class Projects items--*/
+
+.projects_items img
+{
+  width: 100%;
+  height: auto;
+}
+.projects_items figure
+{
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0em 0px;
+  padding: 0px;
+}
+.projects_items
+{
+  margin-top: 80px;
+  height: 383px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -35px;
+}
+.projects_items li
+{
+  width: 240px;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+  position: relative;
+  display: block;
+}
+.projects_items figcaption
+{
+  position: absolute;
+  display: block;
+  top: 80px;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 60px;
+  width: 226px;
+  opacity: 0;
+  padding-left: 14px;
+}
+figcaption span
+{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.fa-eye
+{
+  position: absolute;
+  top: 66px;
+  left: 195px;
+  visibility: hidden;
+  border-radius: 100%;
+  border: solid 2px white;
+  color: white;
+  font-size: 0.9em;
+  padding: 6px 6px 6px 6px;
+  background-color: rgb(88,144,174);
+}
+
+/*-- :hover :not et checked pour selectionner les figures correspondantes aux label--*/
+
+.projects_items li:hover figcaption
+{
+  border: 226px 60px;
+  opacity: 1;
+  height: 60px;
+}
+.projects_items li:hover .fa-eye
+{
+  visibility: visible;
+}
+.projects input.select_1:checked ~ .projects_items li:not(.item_type_1) .fa-eye,
+.projects input.select_2:checked ~ .projects_items li:not(.item_type_2) .fa-eye,
+.projects input.select_3:checked ~ .projects_items li:not(.item_type_3) .fa-eye
+{
+  visibility: hidden;
+}
+.projects input.select_all:checked ~ .projects_items li,
+.projects input.select_1:checked ~ .projects_items .item_type_1,
+.projects input.select_2:checked ~ .projects_items .item_type_2,
+.projects input.select_3:checked ~ .projects_items .item_type_3
+{
+  opacity: 0.8;
+}
+.projects input.select_1:checked ~ .projects_items li:not(.item_type_1),
+.projects input.select_2:checked ~ .projects_items li:not(.item_type_2),
+.projects input.select_3:checked ~ .projects_items li:not(.item_type_3)
+{
+  opacity: 0.1;
+}
+.projects input.select_1:checked ~ .projects_items li:not(.item_type_1) figcaption,
+.projects input.select_2:checked ~ .projects_items li:not(.item_type_2) figcaption,
+.projects input.select_3:checked ~ .projects_items li:not(.item_type_3) figcaption
+{
+  display: none;
+}
+
+
+
+/*-----------------------------------SECTION CONTACT---------------------------*/
+/*-----------------------------------SECTION CONTACT---------------------------*/
+/*-----------------------------------SECTION CONTACT---------------------------*/
+
+/*-- section id contact--*/
+#contact
+{
+  position: relative;
+  width: 99.5%;
+  height:550px;
+  margin: 100px 0px;
+}
+
+/*-- Carte et overlay--*/
+.overlay
+{
+  position: absolute;
+  bottom: -2px;
+  width: 100.3%;
+  height: 550px;
+  z-index: 60;
+  background-color: rgba(111,172,207,0.3);
+}
+iframe
+{
+  width: 100%;
+  height: 550px;
+}
+
+/*-- formulaire de contact --*/
+.adress
+{
+  font-size: 1em;
+  padding-left: 17px;
+  margin-top: -30px;
+}
+.adress h5
+{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.adress span
+ {
+  font-weight: bold;
+  color: rgb(100,100,100);
+ }
+
+.formulaire
+{
+  position: absolute;
+  right: 145px;
+  bottom: 25px;
+  width: 350px;
+  height: 500px;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 70;
+}
+form
+{
+  align-items: center;
+  padding-left: 17px;
+  position: absolute;
+  bottom: 39px;
+  justify-content: space-between;
+}
+p input
+{
+  width: 300px;
+  height: 20px;
+  justify-content: space-around;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: rgb(229,229,229);
+  background: #ffffff;
+  padding-left: 13px;
+  font-family: robotomedium;
+}
+p textarea
+{
+  width: 300px;
+  height: 130px;
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid;
+  border-color: rgb(229,229,229);
+  padding-left: 13px;
+  background: #ffffff;
+  font-family: robotomedium;
+}
+p + a
+{
+  height: 80px;
+  border: 80px 50px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: small;
+}
+.bouton_info1
+{
+  border: 30px none;
+  width: 125px;
+  height: 25px;
+  color: white;
+  background-color: rgb(111,172,207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 4px 0px rgb(87,139,170);
+}
+
+.bouton_info1 a
+{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/*-------------------- FOOTER pour la sémantique -----------------*/
+.footer
+{
+  visibility: hidden;
+}
+
+
+
+/*-----------------------------------MEDIA QUERIES---------------------------*/
+/*-----------------------------------MEDIA QUERIES---------------------------*/
+/*-----------------------------------MEDIA QUERIES---------------------------*/
+
+
+
+
+/*----------------------------- smartphone MAX 350px-----------------*/
+
+
+@media screen and (max-width: 320px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*-- header --*/
+  .logo img
+  {
+    width: 230px;
+    height: 50px;
+  }
+  .logo
+  {
+    margin-left: 35px;
+  }
+  #header
+  {
+    display: block;
+    margin-bottom: 10px;
+    height: 120px;
+  }
+  #header li
+  {
+    margin-bottom: 6px;
+    right: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+  nav ul
+  {
+    padding-left: 0px;
+    font-size: 0.7em;
+  }
+  nav a:hover
+  {
+    border: none;
+  }
+
+/*-- Section slider --*/
+  #container
+  {
+    height: 320px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+  }
+  .picture_slider
+  {
+    display: none;
+  }
+  .slide_pres
+  {
+    top: -15px;
+    left: -131px;
+    width: 300px;
+    padding-top: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+  }
+  .slide_pres
+  {
+    color: black;
+  }
+  .fleche_gauche
+  {
+    display: none;
+  }
+  .fleche_droite
+  {
+    display: none;
+  }
+  .timeline
+  {
+    display: none;
+  }
+
+/*-- Section Nos services --*/
+  .photo_service
+  {
+    display: none;
+  }
+  #nos_services
+  {
+    margin-top: -70px;
+    margin-bottom: -30px;
+    width: 100%;
+  }
+  .titre_sections
+  {
+    font-size: 0.8em;
+  }
+  .section_service
+  {
+    margin-top: 40px;
+  }
+  .liste_services
+  {
+    right: -18px;
+    width: auto;
+  }
+  .UX
+  {
+    width: auto;
+    font-size: small;
+  }
+  .UI
+  {
+    width: auto;
+    font-size: small;
+  }
+  .SEO
+  {
+    width: auto;
+    font-size: small;
+  }
+  .icon_left
+  {
+    left: -80px;
+    margin-right: 10px;
+  }
+  .icone_service
+  {
+    left: 53px;
+  }
+
+/*-- Section Nos projets --*/
+  #nos_projets
+  {
+    height: 1900px;
+  }
+  .label_nav
+  {
+    padding-left: 20px;
+  }
+  .projects label
+  {
+    font-size: small;
+    padding: 8px 10px 3px 10px;
+  }
+  .fa-caret-down
+  {
+    bottom: -24px;
+    left: -37px;
+  }
+  .projects_items
+  {
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+  .projects_items figcaption
+  {
+    top: 100px;
+  }
+  .fa-eye
+  {
+    top: 86px;
+  }
+
+/*-- Section Contact --*/
+  iframe
+  {
+    display: none;
+  }
+  .overlay
+  {
+    display: none;
+  }
+  .formulaire
+  {
+    left: 1px;
+    background-color: rgb(245,245,245);
+    width: 300px;
+  }
+  p input
+  {
+    width: 250px;
+  }
+  p textarea
+  {
+    width: 250px;
+  }
+}
+
+
+
+/*------------------------SMARTPHONES -------------------*/
+
+
+@media all and (min-width: 321px) and (max-width: 480px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*-- header --*/
+  .logo img
+  {
+    width: 230px;
+    height: 50px;
+  }
+  .logo
+  {
+    margin-left: 70px;
+  }
+  #header
+  {
+    display: block;
+    margin-bottom: 10px;
+    height: 120px;
+  }
+  #header li
+  {
+    margin-bottom: 6px;
+    right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
+  nav ul
+  {
+    padding-left: 15px;
+    font-size: 0.8em;
+  }
+  nav a:hover
+  {
+    border: none;
+    transform: none;
+  }
+
+/*-- Section slider --*/
+  #container
+  {
+    height: 330px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-top: 35px;
+  }
+  .picture_slider
+  {
+    display: none;
+  }
+  .slide_pres
+  {
+    top: -15px;
+    left: -105px;
+    width: 300px;
+    padding-top: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+  }
+  .slide_pres
+  {
+    color: black;
+  }
+  .fleche_gauche
+  {
+    display: none;
+  }
+  .fleche_droite
+  {
+    display: none;
+  }
+  .timeline
+  {
+    display: none;
+  }
+
+/*-- Section Nos services --*/
+  .photo_service
+  {
+    display: none;
+  }
+  hr
+  {
+    position: relative;
+    top: -15px;
+  }
+  #nos_services
+  {
+    margin-top: -29px;
+    margin-bottom: -30px;
+    width: 100%;
+  }
+  .titre_sections
+  {
+    font-size: small;
+  }
+  .section_service
+  {
+    margin-top: 60px;
+  }
+  .liste_services
+  {
+    right: -20px;
+    width: auto;
+  }
+  .UX
+  {
+    width: auto;
+    font-size: small;
+  }
+  .UI
+  {
+    width: auto;
+    font-size: small;
+  }
+  .SEO
+  {
+    width: auto;
+    font-size: small;
+  }
+  .icon_left
+  {
+    left: -89px;
+    margin-right: 10px;
+  }
+  .icone_service
+  {
+    left: 49px;
+  }
+
+/*-- Section Nos projets --*/
+  #nos_projets
+  {
+    height: 1900px;
+  }
+  label
+  {
+    font-size: small;
+    padding: 8px 10px 3px 10px;
+    touch-action: auto;
+  }
+  .fa-caret-down
+  {
+    bottom: -24px;
+    left: -37px;
+  }
+  .projects_items
+  {
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+  .projects_items figcaption
+  {
+    top: 100px;
+  }
+  .fa-eye
+  {
+    top: 86px;
+  }
+
+/*-- Section Contact --*/
+  iframe
+  {
+    display: none;
+  }
+  .overlay
+  {
+    display: none;
+  }
+  .formulaire
+  {
+    left: 35px;
+    background-color: rgb(245,245,245);
+    width: 300px;
+  }
+  p input
+  {
+    width: 250px;
+  }
+  p textarea
+  {
+    width: 250px;
+  }
+}
+
+
+
+/*----------------------- TABLETTES --------------------*/
+
+
+
+@media all and (min-width: 481px) and (max-width: 780px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*-- Section slider --*/
+  #container
+  {
+    height: 385px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+  }
+  .picture_slider
+  {
+    display: none;
+  }
+  .all_container
+  {
+    display: none;
+  }
+  .slide_pres
+  {
+    top: -7px;
+    left: 4px;
+    width: 450px;
+    padding-top: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .slide_pres
+  {
+    color: black;
+  }
+  .fleche_gauche
+  {
+    display: none;
+  }
+  .fleche_droite
+  {
+    display: none;
+  }
+  .timeline
+  {
+    display: none;
+  }
+
+/*-- Section Nos services --*/
+  .photo_service
+  {
+    display: none;
+  }
+  #nos_services
+  {
+    margin-top: -41px;
+    margin-bottom: -30px;
+    width: 100%;
+    width: auto;
+  }
+  .section_service
+  {
+    margin-top: 60px;
+  }
+  .liste_services
+  {
+    right: -5px;
+    width: auto;
+  }
+  .UX
+  {
+    width: auto;
+  }
+  .UI
+  {
+    width: auto;
+  }
+  .SEO
+  {
+    width: auto;
+  }
+  .icon_left
+  {
+    left: -86px;
+    margin-right: 10px;
+  }
+  .icone_service
+  {
+    left: 54px;
+  }
+
+/*-- Section Nos projets --*/
+  #nos_projets
+  {
+    height: 1090px;
+    width: 100%;
+  }
+  label
+  {
+    font-size: small;
+    touch-action: auto;
+  }
+  .projects
+  {
+    height: 800px;
+  }
+  .projects_items
+  {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 0px;
+    width: auto;
+  }
+  .projects_items li
+  {
+    height: auto;
+  }
+  .projects_items figcaption
+  {
+    top: 100px;
+  }
+  .fa-eye
+  {
+    top: 88px;
+  }
+/*-- Section Contact --*/
+  iframe
+  {
+    display: none;
+  }
+  .overlay
+  {
+    display: none;
+  }
+  .formulaire
+  {
+    left: 150px;
+    background-color: rgb(245,245,245)
+  }
+}
+/*------------------------------Ecran de 781px à 1023px ------------------*/
+
+
+@media all and (min-width: 781px) and (max-width: 1023px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*-- Section slider --*/
+  #container
+  {
+
+    overflow: hidden;
+    position: relative;
+    left:0;
+    right:0;
+    top:0;
+  }
+  .fleche_gauche
+  {
+    top: 120px;
+  }
+  .fleche_droite
+  {
+    top: 120px;
+  }
+  .all_container
+  {
+    float: left;
+    z-index: 80;
+    display: inline-block;
+  }
+  .slide_pres
+  {
+    top: -50px;
+    left: -30px;
+    width: 365px;
+  }
+  .slide_pres h1
+  {
+    font-size: 1.5em;
+  }
+
+/*-- Section Nos services --*/
+  .photo_service
+  {
+    display: none;
+  }
+  .icone_service
+  {
+    left: 56px;
+  }
+
+/*-- Section Nos Projets --*/
+  #nos_projets
+  {
+    height: 1120px;
+  }
+  .projects_items
+  {
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .projects_items li
+  {
+    height: auto;
+  }
+  .fa-eye
+  {
+    top: 87px;
+  }
+  .projects_items figcaption
+  {
+    top: 100px;
+  }
+}
+
+
+
+/*-------------------ORDINATEUR ECRAN 1025 à 1219px-----------------------*/
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1219px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*--Section Slider --*/
+  #container
+  {
+  overflow: hidden;
+  position: relative;
+  left:0;
+  right:0;
+  top:0;
+  }
+  .fleche_gauche
+  {
+    top: 160px;
+  }
+  .fleche_droite
+  {
+    top: 160px;
+  }
+  .all_container
+  {
+    float: left;
+    z-index: 80;
+    display: inline-block;
+  }
+/*-- Section Nos projets --*/
+  #nos_projets
+  {
+    width: 100%;
+    height: 790px;
+  }
+  .projects_items img
+  {
+    width: 100%;
+    height: auto;
+  }
+  .projects_items
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .projects_items figcaption
+  {
+    top: 100px;
+    width: 226px;
+  }
+  .fa-eye
+  {
+    top: 86px;
+    left: 195px;
+  }
+}
+
+
+
+/*-------------------- ORDINATEUR ECRAN de 1220px à 1390px ----------------*/
+
+
+
+@media all and (min-width: 1220px) and (max-width: 1390px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+
+/*-- Section Slider --*/
+  #container
+  {
+    overflow: hidden;
+    position: relative;
+    left:0;
+    right:0;
+    top:0;
+    width: 100%;
+  }
+  .fleche_gauche
+  {
+    top: 180px;
+  }
+  .fleche_droite
+  {
+    top: 180px;
+  }
+  .all_container
+  {
+    float: left;
+    z-index: 80;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+/*-- Section Nos Projets --*/
+  #nos_projets
+  {
+    width: 100%;
+    height: 850px;
+  }
+  .projects_items img
+  {
+    width: 100%;
+    height: auto;
+  }
+  .projects_items
+  {
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .projects_items li
+  {
+    width: 275px;
+    height: 185px;
+  }
+  .projects_items figcaption
+  {
+    width: 261px;
+    padding-left: 14px;
+    height: 50px;
+    top: 124px;
+  }
+  .fa-eye
+  {
+    top: 110px;
+    left: 215px;
+  }
+}
+
+
+
+/*---------------------------------- min 1391px à 1520 px---------------*/
+
+
+
+@media all and (min-width: 1391px) and (max-width: 1520px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*-- Section Slider --*/
+  #container
+  {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  left:0;
+  right:0;
+  top:0;
+  }
+  .fleche_gauche
+  {
+    top: 200px;
+  }
+  .fleche_droite
+  {
+    top: 200px;
+  }
+  .all_container
+  {
+  width: 100%;
+  height: auto;
+  float: left;
+  z-index: 80;
+  display: inline-block;
+  }
+
+/*-- Section Nos Projets --*/
+  #nos_projets
+  {
+    width: 100%;
+    height: 850px;
+  }
+  .projects_items
+  {
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .projects_items img
+  {
+    width: 330px;
+    height: 225px;
+  }
+  .projects_items li
+  {
+    width: 330px;
+    height: 200px;
+  }
+  .projects_items figcaption
+  {
+    width: 316px;
+    padding-left: 14px;
+    height: 50px;
+    top: 165px;
+  }
+  .fa-eye
+  {
+    top: 150px;
+    left: 260px;
+    border-radius: 100%;
+    border: solid 2px white;
+    color: white;
+    padding: 9px 9px 9px 9px;
+  }
+}
+
+
+/*---------------------------- GRAND ECRAN min 1521px-----------------------*/
+
+
+@media all and (min-width: 1521px)
+{
+  body
+  {
+    width: 100%;
+  }
+
+/*-- Section Slider --*/
+  #container
+  {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    left:0;
+    right:0;
+    top:0;
+  }
+  .fleche_gauche
+  {
+    top: 250px;
+  }
+  .fleche_droite
+  {
+    top: 250px;
+  }
+  .all_container
+  {
+    width: 100%;
+    height: auto;
+    float: left;
+    z-index: 80;
+    display: inline-block;
+  }
+  .slide_pres
+    {
+      padding-top: 130px;
+      padding-left: 200px;
+    }
+/*-- Section Nos Projets --*/
+  #nos_projets
+  {
+    width: 100%;
+    height: 850px;
+  }
+  .projects_items img
+  {
+    width: 335px;
+    height: 225px;
+  }
+  .projects_items
+  {
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .projects_items li
+  {
+    width: 335px;
+  }
+  .projects_items figcaption
+  {
+    width: 321px;
+    padding-left: 14px;
+    height: 50px;
+    top: 165px;
+  }
+  .fa-eye
+  {
+    top: 150px;
+    left: 265px;
+    border-radius: 100%;
+    border: solid 2px white;
+    color: white;
+    padding: 9px 9px 9px 9px;
+
+  }
+}
+
+
+/*-------- ------------ -------------- ----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
